@@ -6,10 +6,14 @@
 package m1.piu;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.SplitPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -17,13 +21,20 @@ import javafx.stage.Stage;
  */
 public class ContactManagerFX extends Application {
     
+    
+    
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLMainFrame.fxml"));
+        
+        
+        
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
         stage.show();
     }
 
