@@ -5,15 +5,18 @@
  */
 package m1.piu;
 
+
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
+
 
 /**
  *
@@ -22,20 +25,24 @@ import javafx.stage.StageStyle;
 public class ContactManagerFX extends Application {
     
     
-    
+    public static  Parent n;
     @Override
     public void start(Stage stage) throws Exception {
-        
+        ContactManagerFX.n = FXMLLoader.load(getClass().getResource("FXMLMainPanel.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("FXMLMainFrame.fxml"));
         
-        
-        
-        
+        //n = ele;
         Scene scene = new Scene(root);
-        
+        stage.setOnCloseRequest((WindowEvent e) -> {
+            Platform.exit();
+            System.exit(0);
+        });
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UTILITY);
         stage.show();
+        
+        //stage.setScene(scene);
+        //stage.initStyle(StageStyle.UTILITY);
+        //stage.show();
     }
 
     /**
@@ -44,5 +51,6 @@ public class ContactManagerFX extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
     
 }

@@ -89,7 +89,8 @@
          </children>
       </Pane>
    </bottom>
+
    <center>
-     
+      <Pane id="mainpanelId" fx:id="mainpanelId" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
