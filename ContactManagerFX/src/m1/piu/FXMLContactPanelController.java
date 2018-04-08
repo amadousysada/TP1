@@ -5,11 +5,20 @@
  */
 package m1.piu;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.SplitPane;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -18,13 +27,31 @@ import javafx.scene.control.SplitPane;
  */
 public class FXMLContactPanelController implements Initializable {
 
+    @FXML
+    private Button addNumber;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-       
     }    
+
+    @FXML
+    private void addPhone(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("FXMLNouveauTel.fxml"));
+            Stage stage = new Stage();
+            Parent root1 = (Parent)fxmlLoader.load();
+            stage.initStyle(StageStyle.UTILITY);
+            stage.setScene(new Scene(root1));
+            //Parametres ctrlparam = fxmlLoader.<Parametres>getController();
+            stage.resizableProperty().set(false);
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLMainFrameController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
 }

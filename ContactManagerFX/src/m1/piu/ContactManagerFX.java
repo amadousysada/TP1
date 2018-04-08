@@ -20,7 +20,7 @@ import javafx.stage.WindowEvent;
 
 /**
  *
- * @author sy
+ * @author gaby
  */
 public class ContactManagerFX extends Application {
     
@@ -38,6 +38,7 @@ public class ContactManagerFX extends Application {
             System.exit(0);
         });
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
         
         //stage.setScene(scene);

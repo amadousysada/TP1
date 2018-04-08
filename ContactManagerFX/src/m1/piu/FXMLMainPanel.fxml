@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<SplitPane dividerPositions="0.41192411924119243" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.36771844660194175" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1353.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <items>
       <BorderPane prefHeight="398.0" prefWidth="248.0">
          <bottom>
@@ -79,19 +79,19 @@
                               <Region prefHeight="169.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
                            </right>
                            <center>
-                              <VBox prefHeight="132.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+                              <VBox prefHeight="245.0" prefWidth="164.0" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Pane prefHeight="23.0" prefWidth="161.0" style="-fx-background-color: #858687; -fx-border-color: black;">
+                                    <Pane prefHeight="18.0" prefWidth="505.0" style="-fx-background-color: #858687; -fx-border-color: black;">
                                        <children>
                                           <Text fill="WHITE" layoutX="20.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
                                        </children>
                                     </Pane>
-                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
+                                    <BorderPane prefHeight="175.0" prefWidth="505.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
                                        <VBox.margin>
                                           <Insets top="5.0" />
                                        </VBox.margin>
                                        <right>
-                                          <Button mnemonicParsing="false" text="See on map" translateY="70.0" BorderPane.alignment="CENTER">
+                                          <Button mnemonicParsing="false" text="See on map" translateY="50.0" BorderPane.alignment="CENTER">
                                              <BorderPane.margin>
                                                 <Insets bottom="2.0" right="5.0" />
                                              </BorderPane.margin>
@@ -110,7 +110,7 @@
                            <left>
                               <VBox prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Pane prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: #858687; -fx-border-color: black;">
+                                    <Pane prefHeight="17.0" prefWidth="300.0" style="-fx-background-color: #858687; -fx-border-color: black;">
                                        <VBox.margin>
                                           <Insets />
                                        </VBox.margin>
@@ -118,7 +118,7 @@
                                           <Text fill="WHITE" layoutX="14.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identity" textAlignment="CENTER" />
                                        </children>
                                     </Pane>
-                                    <Pane prefHeight="120.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
+                                    <Pane prefHeight="115.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
                                        <VBox.margin>
                                           <Insets top="5.0" />
                                        </VBox.margin>
@@ -131,7 +131,7 @@
                                           <Text layoutX="68.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                        </children>
                                     </Pane>
-                                    <Pane prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #858687; -fx-border-color: black;">
+                                    <Pane prefHeight="19.0" prefWidth="298.0" style="-fx-background-color: #858687; -fx-border-color: black;">
                                        <VBox.margin>
                                           <Insets top="5.0" />
                                        </VBox.margin>
@@ -139,7 +139,7 @@
                                           <Text fill="WHITE" layoutX="22.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone numbers" textAlignment="CENTER" />
                                        </children>
                                     </Pane>
-                                    <Pane prefHeight="126.0" prefWidth="300.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
+                                    <Pane prefHeight="79.0" prefWidth="300.0" style="-fx-border-width: 1px; -fx-border-color: #acadae;">
                                        <VBox.margin>
                                           <Insets top="5.0" />
                                        </VBox.margin>
@@ -157,7 +157,7 @@
                               </VBox>
                            </left>
                            <bottom>
-                              <Region maxHeight="41.0" minHeight="1.0" prefHeight="5.0" prefWidth="521.0" BorderPane.alignment="CENTER" />
+                              <Region maxHeight="41.0" minHeight="0.0" prefHeight="0.0" prefWidth="370.0" BorderPane.alignment="CENTER" />
                            </bottom>
                         </BorderPane>
                      </children>

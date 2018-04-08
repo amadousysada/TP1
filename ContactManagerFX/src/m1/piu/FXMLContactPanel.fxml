@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLContactPanelController">
    <left>
       <Region prefHeight="311.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
    </left>
@@ -82,7 +82,7 @@
                      <children>
                         <Pane layoutX="13.0" layoutY="62.0" prefHeight="168.0" prefWidth="326.0" style="-fx-border-color: #959595;">
                            <children>
-                              <Button alignment="TOP_LEFT" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Add" />
+                              <Button fx:id="addNumber" alignment="TOP_LEFT" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" onAction="#addPhone" prefHeight="25.0" prefWidth="61.0" text="Add" />
                               <Button alignment="TOP_LEFT" ellipsisString="" layoutX="261.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Remove" />
                               <Button alignment="TOP_LEFT" layoutX="261.0" layoutY="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Up" />
                               <TableView layoutX="10.0" layoutY="13.0" prefHeight="134.0" prefWidth="245.0">
