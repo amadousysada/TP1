@@ -97,7 +97,10 @@
                                           </Button>
                                        </right>
                                        <top>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="157.7294921875" BorderPane.alignment="TOP_LEFT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="157.7294921875" BorderPane.alignment="TOP_LEFT">
+                                             <BorderPane.margin>
+                                                <Insets top="20.0" />
+                                             </BorderPane.margin></Text>
                                        </top>
                                     </BorderPane>
                                  </children>
